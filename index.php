@@ -24,7 +24,7 @@ rArrow.onclick=function (e) {
 <body onload="load()">
 
 	<div class="sideMenu">
-		<div class="buttonVertical"></div>
+		<div class="buttonVertical"><div id="additem"></div></div>
 		<div class="buttonVertical"></div>
 		<div class="buttonVertical"></div>
 		<div class="buttonVertical"></div>
@@ -43,7 +43,7 @@ rArrow.onclick=function (e) {
 					<div class="button">marzec 2016</div>
 					<div class="button">kwiecien 2016</div>
 					<div class="button">maj 2016</div>
-					<div class="button">czerwiec 2016</div>
+					<div class="button">+</div>
 <!-- 					<div class="button">lipiec 2016</div> -->
 <!-- 					<div class="button">sierpien 2016</div> -->
 <!-- 					<div class="button">wrzesien 2016</div> -->

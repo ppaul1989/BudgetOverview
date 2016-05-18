@@ -9,10 +9,10 @@ body {
 	height: 50px;
 	background-color: #444444;
 	box-shadow: 0px 3px 5px #000000;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-/* 	overflow: hidden; */
+	/* 	overflow: hidden; */
 	color: white;
 	text-align: center;
 	padding-top: auto;
@@ -20,7 +20,7 @@ body {
 }
 
 .sideMenu {
-	position:absolute;
+	position: fixed;
 	top: 150px;
 	left: 0;
 	height: 300px;
@@ -37,9 +37,9 @@ body {
 	width: 8.18%;
 	height: 50px;
 	text-align: center;
-	border-left: 1px;
-	border-left-color: black;
+	border-left: 1px; border-left-color : black;
 	border-left-style: inset;
+	border-left-color: black;
 }
 
 .buttonVertical {
@@ -49,10 +49,18 @@ body {
 	width: 100%;
 	height: 50px;
 }
-div.buttonVertical:hover {
-	-webkit-transform: scale(1.1,1);
+
+#additem {
+	background-image: url("gfx/trolley-trans.png");
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
 }
 
+div.buttonVertical:hover {
+	width: 110%;
+	box-shadow: 1px 0px 3px #000000;
+}
 
 .leftArrow {
 	position: relative;
@@ -68,37 +76,37 @@ div.buttonVertical:hover {
 
 .rightArrow {
 	z-index: 1;
-	position: relative;
-	display: inline;
+	position: relative; display : inline;
 	float: right;
 	background-color: #333333;
 	width: 2.5%;
 	height: 50px;
 	box-shadow: -5px 0px 5px #000000;
+	display: inline;
 }
 
-.carousel{
-	z-index:-10;
+.carousel {
+	z-index: -10;
 	display: inline;
 	float: left;
-/*     overflow:hidden;  */
-    width:95%;
+	/*     overflow:hidden;  */
+	width: 95%;
 }
 
-.panes{
-	z-index:0;
+.panes {
+	z-index: 0;
 	display: inline;
-    list-style:none;
-    float: left;
-    position: relative;
-    width: 500%;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-/* 	overflow: visible; */
-    transition: transform 1s ease-in-out;
+	list-style: none;
+	float: left;
+	position: relative;
+	width: 500%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	/* 	overflow: visible; */
+	transition: transform 1s ease-in-out;
 }
-.panes > li{
-	
+
+.panes>li {
 	display: inline;
 	float: left;
 	background-color: #333333;
@@ -113,13 +121,11 @@ div.buttonVertical:hover {
 .hidden {
 	visibility: hidden;
 }
+
 .content {
-	margin-top:60px;
-	margin-left: 100px;
-	width:100%;
-	height:100%;
+	margin-top: 60px;
+	margin-left: 100px; width : 100%;
+	height: 100%;
 	background-color: #555555;
+	width: 100%;
 }
-
-
-
