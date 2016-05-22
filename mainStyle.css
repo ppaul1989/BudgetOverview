@@ -23,7 +23,7 @@ body {
 	position: fixed;
 	top: 150px;
 	left: 0;
-	height: 300px;
+	height: 200px;
 	width: 60px;
 	background-color: grey;
 	box-shadow: 3px 0px 5px #000000;
@@ -42,6 +42,29 @@ body {
 	border-left-color: black;
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
+.button.active {
+	background-color: #666666;
+}
+
+.buttonPlus {
+	background-color: #555555;
+	display: inline;
+	float: left;
+	margin-right: 0.1%;
+	width: 2.18%;
+	height: 50px;
+	text-align: center;
+	box-shadow: -2px 0px 5px #000000;
+} 
+
+.buttonPlus:hover {
+    cursor: pointer;
+}
+
 .buttonVertical {
 	float: left;
 	background-color: #333333;
@@ -53,12 +76,58 @@ body {
 #additem {
 	background-image: url("gfx/trolley-trans.png");
 	background-repeat: no-repeat;
-	width: 50px;
+	background-size: 30px 30px;
+	background-position: 15px, 0px;	
+/* 	width: 100%; */
 	height: 50px;
 }
 
-div.buttonVertical:hover {
+#stats{
+	background-image: url("gfx/stats.png");
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: 15px, 0px;	
+/* 	width: 100%; */
+	height: 50px;
+}
+
+#budget{
+	background-image: url("gfx/budget_icon.png");
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: 15px, 0px;	
+/* 	width: 100%; */
+	height: 50px;
+}
+
+#trash{
+	background-image: url("gfx/trash_icon.png");
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: 15px, 0px;	
+/* 	width: 100%; */
+	height: 50px;
+}
+
+
+#logout{
+	background-image: url("gfx/logout.png");
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: 15px, 0px;	
+/* 	width: 100%; */
+	height: 50px;
+}
+
+
+
+.buttonVertical:hover {
 	width: 110%;
+	box-shadow: 1px 0px 3px #000000;
+}
+
+.buttonVertical:active {
+	width: 105%;
 	box-shadow: 1px 0px 3px #000000;
 }
 
@@ -125,7 +194,31 @@ div.buttonVertical:hover {
 .content {
 	margin-top: 60px;
 	margin-left: 100px; width : 100%;
-	height: 100%;
-	background-color: #555555;
+	height: 95%;
+/* 	background-color: white; */
 	width: 100%;
+}
+.bgc {
+/* 	margin-top: 60px; */
+/* 	margin-left: 100px; */
+	height: 95%;
+ 	background-color: white;
+	width: 90%;
+}
+
+.contextMenu#itemCon {
+	z-index: -5;
+	visibility: hidden;
+	position: absolute;
+	top: 400px;
+	left: 70px;
+	background-color: rgba(170,170,170,0.5);
+	width: 100px;
+	height: 50px;
+	box-shadow: 3px 0px 3px #000000;
+	opacity: 0.0;
+	transition: 250ms ease-in-out;
+	line-height: 50px;
+	padding-left: 5px;
+	color: #BBBBBB;
 }
